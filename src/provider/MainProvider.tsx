@@ -1,20 +1,22 @@
+import type { ReactNode } from "react";
 // import { StateContextProvider } from "@/context/StateContext";
 // import { AuthContextProvider } from "@/context/AuthContext";
 // import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-// import type { ReactNode } from "react";
 // import { Toaster } from "react-hot-toast";
 
 const MainProvider = ({ children }: { children: ReactNode }) => {
-  const queryClient = new QueryClient();
+  // const queryClient = new QueryClient();
 
   return (
     <>
-      <QueryClientProvider client={queryClient}>
+      {/* <QueryClientProvider client={queryClient}>
         <AuthContextProvider>
-          <StateContextProvider>{children}</StateContextProvider>
+          <StateContextProvider> */}
+      {children}
+      {/* </StateContextProvider>
         </AuthContextProvider>
       </QueryClientProvider>
-      <Toaster position="top-right" reverseOrder={false} />
+      <Toaster position="top-right" reverseOrder={false} /> */}
     </>
 
     // <Provider store={store}> // Redux store provider
